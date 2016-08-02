@@ -2,6 +2,10 @@
 
 A [Contentful](https://contentful.com/) webhook endpoint that creates [Buildkite](https://buildkite.com/) builds based on content events.
 
+![Contentful webhook screenshot](http://i.imgur.com/JpE4RZT.png)
+
+![Buildkite screenshot](http://i.imgur.com/kkdSw7u.png)
+
 Your builds will be created with two pieces of meta-data:
 
 * `type` - such as `Entry`, `ContentType` or `Asset`
