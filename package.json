@@ -6,5 +6,8 @@
   },
   "scripts": {
     "web": "node index.js"
+  },
+  "engines": {
+    "node": "6.1.x"
   }
 }
