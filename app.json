@@ -17,8 +17,7 @@
       "value": "admin"
     },
     "AUTH_PASSWORD": {
-      "description": "A password to protect the webhook",
-      "generator": "secret"
+      "description": "A password to protect the webhook"
     },
     "BUILDKITE_API_TOKEN": {
       "description": "A Buildkite API Access Token with write_builds access (see https://buildkite.com/user/api-access-tokens)"
