@@ -12,6 +12,12 @@
   "repository": "https://github.com/buildkite/contentful-webhook-for-buildkite",
   "logo": "https://raw.githubusercontent.com/buildkite/logo/master/marks/Buildkite%20-%20Mark%20-%20colour.png",
   "env": {
+    "AUTH_USERNAME": {
+      "description": "A username to protect the webhook"
+    },
+    "AUTH_PASSWORD": {
+      "description": "A password to protect the webhook"
+    },
     "BUILDKITE_API_TOKEN": {
       "description": "A Buildkite API Access Token with write_builds access (see https://buildkite.com/user/api-access-tokens)"
     }
