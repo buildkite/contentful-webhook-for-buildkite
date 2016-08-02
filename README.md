@@ -14,8 +14,8 @@ You can retrieve them in your build script like so:
 
 set -euo pipefail
 
-echo "Type: $(buildkite-agent meta-data get type)"
-echo "Action: $(buildkite-agent meta-data get action)"
+echo "Type: $(buildkite-agent meta-data get 'type')"
+echo "Action: $(buildkite-agent meta-data get 'action')"
 ```
 
 ## Usage
