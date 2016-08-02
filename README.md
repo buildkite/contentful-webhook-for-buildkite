@@ -7,7 +7,7 @@ Your builds will be created with two pieces of meta-data:
 * `type` - such as `Entry`, `ContentType` or `Asset`
 * `action` - such as `publish`, `save`, etc.
 
-You can use these to trigger another pipeline for example:
+You can use these to trigger a site build + deploy, for example:
 
 ```bash
 #!/bin/bash
@@ -18,15 +18,8 @@ content_type=$(buildkite-agent meta-data get 'type')
 action=$(buildkite-agent meta-data get 'action')
 
 if [[ $content_type == 'Entry' && $action == 'publish']]; then
-  buildkite-agent pipeline upload .buildkite/pipeline.publish-site.yml
+  # Build and deploy
 fi
-```
-
-This assumes there is a file `.buildkite/pipeline.publish-site.yml` containing:
-
-```yml
-steps:
-  - trigger: 'deploy-site'
 ```
 
 ## Usage
