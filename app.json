@@ -1,5 +1,5 @@
 {
-  "name": "Contentful Webhook for Buildkite",
+  "name": "Contentful Buildkite Webhook",
   "description": "A Contentful webhook endpoint that creates Buildkite builds based on content events",
   "keywords": [
     "ci",
