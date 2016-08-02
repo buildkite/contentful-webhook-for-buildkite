@@ -1,0 +1,19 @@
+{
+  "name": "Contentful Webhook for Buildkite",
+  "description": "A Contentful webhook endpoint that creates Buildkite builds based on content events",
+  "keywords": [
+    "ci",
+    "buildkite",
+    "contentful",
+    "cms",
+    "webhooks"
+  ],
+  "website": "https://buildkite.com/",
+  "repository": "https://github.com/buildkite/contentful-webhook-for-buildkite",
+  "logo": "https://raw.githubusercontent.com/buildkite/logo/master/marks/Buildkite%20-%20Mark%20-%20colour.png",
+  "env": {
+    "BUILDKITE_API_TOKEN": {
+      "description": "A Buildkite API Access Token with write_builds access (see https://buildkite.com/user/api-access-tokens)"
+    }
+  }
+}
