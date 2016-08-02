@@ -7,15 +7,26 @@ Your builds will be created with two pieces of meta-data:
 * `type` - such as `Entry`, `ContentType` or `Asset`
 * `action` - such as `publish`, `save`, etc.
 
-You can retrieve them in your build script like so:
+You can use these to trigger another pipeline for example:
 
 ```bash
 #!/bin/bash
 
 set -euo pipefail
 
-echo "Type: $(buildkite-agent meta-data get 'type')"
-echo "Action: $(buildkite-agent meta-data get 'action')"
+content_type=$(buildkite-agent meta-data get 'type')
+action=$(buildkite-agent meta-data get 'action')
+
+if [[ $content_type == 'Entry' && $action == 'publish']]; then
+  buildkite-agent pipeline upload .buildkite/pipeline.publish-site.yml
+fi
+```
+
+This assumes there is a file `.buildkite/pipeline.publish-site.yml` containing:
+
+```yml
+steps:
+  - trigger: 'deploy-site'
 ```
 
 ## Usage
