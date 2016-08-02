@@ -2,9 +2,9 @@
 
 A [Contentful](https://contentful.com/) webhook endpoint that creates [Buildkite](https://buildkite.com/) builds based on content events.
 
-![Contentful webhook screenshot](http://i.imgur.com/JpE4RZT.png)
+<img width="841" alt="Contentful webhook screenshot" src="https://cloud.githubusercontent.com/assets/153/17334295/0af8e0e4-5919-11e6-8d8e-692f3e2d116b.png">
 
-![Buildkite screenshot](http://i.imgur.com/kkdSw7u.png)
+<img width="403" alt="Buildkite build from Contentful screenshot" src="https://cloud.githubusercontent.com/assets/153/17334256/e117eab8-5918-11e6-8fcb-ab36b869b7e4.png">
 
 Your builds will be created with two pieces of meta-data:
 
