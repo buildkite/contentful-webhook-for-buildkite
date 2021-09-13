@@ -1,3 +1,7 @@
+# Deprecated
+
+> Buildkite no longer uses the Contentful webhook endpoint. This repository has been deprecated and is no longer maintained.
+
 # Contentful Webhook for Buildkite
 
 A [Contentful](https://contentful.com/) webhook endpoint that creates [Buildkite](https://buildkite.com/) builds based on content events.
